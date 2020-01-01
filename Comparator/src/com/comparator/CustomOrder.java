@@ -12,6 +12,9 @@ public class CustomOrder {
 		al.add(new Author("zoozo","toy",1,1000));
 		al.add(new Author("comfort","girl",18,10000));
 		al.add(new Author("mazaka","boy",14,3000));
+		
+		System.out.println("Before sorting customorder"+al);
+		
 		Collections.sort(al);
 		for(Author l:al){
 			System.out.println(l.getLname()+"   "+l.getFname()+"   "+l.getAge()+"     "+l.getSalary());
